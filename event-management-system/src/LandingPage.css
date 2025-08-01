@@ -5,7 +5,9 @@
   font-weight: 100;
   font-style: normal;
 }
-/* Navigation Bar*/
+@media (max-width : 1980px)
+{
+    /* Navigation Bar*/
 .navigation-container
 {
     display: flex;
@@ -244,6 +246,8 @@ form input, textarea, .submit-button
 { 
     cursor: pointer;
 }
+}
+
 @media (max-width:320px) 
 {
   .hideOnMobile 
