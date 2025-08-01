@@ -39,8 +39,8 @@ export default function Navigation() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="">
-              <p>Login/Register</p>
+            <a href="#register-login">
+              Login/Register
             </a>
           </li>
         </ul>
