@@ -1,0 +1,159 @@
+*
+{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+/* Navigation Bar*/
+.navigation-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+ul
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ul li
+{
+    list-style-type: none;
+}
+li a 
+{
+    text-decoration: none;
+    color: black;
+}
+/* Hero Section*/
+.hero-container
+{
+    display: grid;
+    grid-template-rows: 260px ;
+    margin:auto 12rem 0px 12rem;
+    gap: 10px;
+    height: 80vh;
+    padding-top: 100px;
+}
+.hero-container h2
+{
+   font-size: 500%;
+}
+.get-started
+{
+    padding: 10px;
+    width: 120px;
+    border-style: none;
+    background-color: coral;
+    cursor: pointer;
+}
+.get-started:hover
+{
+    background-color: rgb(240, 169, 77);
+}
+
+/*About Section*/
+.about-container
+{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+}
+.about-container .about-images
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+.about-item .about-description
+{
+    text-align: center;
+    width: 50%;
+    margin: 100px auto;
+}
+.about-item .images
+{
+    justify-items: center;
+    position: relative;
+    background-color: red;
+}
+.about-item .images .source
+{
+    width: 100%;
+    height: 100%;
+}
+.about-item .images .source img
+{
+    width: 100%;
+    height: 100%;
+}
+.about-item .images .description
+{
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    background-color:rgba(32, 33, 34, 0.637) ;
+    color: white;
+    box-shadow: 10px 10px 900px black;
+    opacity: 0;
+    padding: 10px;
+}
+.about-item .images:hover 
+{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.about-item .images:hover .description
+{
+    opacity: 1;
+
+}
+/*Services*/
+.services-container
+{
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    width: 50vw;
+    justify-items: center;
+}
+.services-container .services
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 100px;
+    padding: 10px;
+    margin: auto 390px;
+}
+.service-item
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.service-image
+{
+    width: 300px;
+    height: 300px;
+}
+.service-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
