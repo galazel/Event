@@ -1,0 +1,72 @@
+[
+  {
+    "photo": "public/1.png",
+    "title": "Creative Arts Workshop",
+    "date": "2025-08-15",
+    "slotsLeft": 5,
+    "description": "Hands-on art workshop for beginners and creatives."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Photography Basics",
+    "date": "2025-08-20",
+    "slotsLeft": 3,
+    "description": "Learn the essentials of photography and photo editing."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Digital Illustration",
+    "date": "2025-08-25",
+    "slotsLeft": 10,
+    "description": "Enhance your illustration skills in this digital art class."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Calligraphy 101",
+    "date": "2025-09-01",
+    "slotsLeft": 2,
+    "description": "Master the basics of modern calligraphy with ease."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Fashion Design Basics",
+    "date": "2025-09-05",
+    "slotsLeft": 4,
+    "description": "Start your fashion design journey with this beginner class."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Makeup & Styling",
+    "date": "2025-09-10",
+    "slotsLeft": 8,
+    "description": "Discover pro tips for makeup and personal styling."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Resin Art Workshop",
+    "date": "2025-09-15",
+    "slotsLeft": 6,
+    "description": "Learn how to create stunning resin artworks."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Portrait Sketching",
+    "date": "2025-09-18",
+    "slotsLeft": 3,
+    "description": "Sketch realistic portraits in this step-by-step class."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Interior Styling",
+    "date": "2025-09-22",
+    "slotsLeft": 7,
+    "description": "Design and style interiors like a professional."
+  },
+  {
+    "photo": "public/1.png",
+    "title": "Handmade Crafts Fair",
+    "date": "2025-09-25",
+    "slotsLeft": 0,
+    "description": "Showcase and sell your handmade arts & crafts."
+  }
+]

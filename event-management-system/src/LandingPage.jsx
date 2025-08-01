@@ -1,11 +1,12 @@
 import Navigation from "./Navigation";
 import "./LandingPage.css";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Service from "./Service";
 import services from "./assets/services.json";
 import about from "./assets/about.json";
 import AboutCard from "./AboutCard";
+import Events from "./Events";
 
 function Home() {
   return (
@@ -39,15 +40,13 @@ function About() {
         <h1>WHAT WE DO?</h1>
       </div>
       <div className="about-item about-images">
-        {
-          about.map((item,index) =>(
-              <AboutCard
-                key = {index}
-                photo = {item.photo}
-                description = {item.description}
-              />
-          ))
-        }
+        {about.map((item, index) => (
+          <AboutCard
+            key={index}
+            photo={item.photo}
+            description={item.description}
+          />
+        ))}
       </div>
       <div className="about-item">
         <p className="about-description">
@@ -79,16 +78,229 @@ function Services() {
     </div>
   );
 }
-
-function Events() {
-  return <div className="events-container"></div>;
-}
 function Questions() {
-  return <div className="events-container"></div>;
+  return (
+    <div className="questions-container">
+      <div className="questions-title">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+      <div className="questions-accordion">
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                1. How do I book an event?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                To book an event, simply browse the list of available events,
+                select the one you're interested in, and click the "Book Now"
+                button. You’ll be guided through a short registration and
+                payment process.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                2. Can I create my own event on the platform?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                Yes! As an organizer, you can create and publish your event
+                through your dashboard. Just sign in as an organizer and click
+                "Create Event" to get started.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                3. What kind of events can I create?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                You can create any type of event, such as workshops, seminars,
+                concerts, meetups, classes, or private gatherings—physical or
+                virtual.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                4. How do I edit or update my event after publishing it?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                You can edit your event details anytime before the event starts
+                by going to your Organizer Dashboard and selecting the event you
+                want to update.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                5. Can I limit the number of participants in my event?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                Absolutely. While creating your event, you can set the maximum
+                number of slots available. The system will automatically stop
+                bookings once the limit is reached.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-function Contact() {
-  return <div className="events-container"></div>;
+function Contact()
+{
+  const [fullname,setFullName] = useState('')
+  const [email,setEmail] = useState('')
+  const [question,setQuestion] = useState('')
+
+  function setNameValue(e)
+  {
+      setFullName(e)
+  }
+  function setEmailValue(e)
+  {
+      setEmail(e)
+  }
+  function setQuestionValue(e)
+  {
+      setQuestion(e)
+  }
+  function handleSubmit()
+  {
+
+  }
+  return(
+    <div className="contact-container">
+      <div className="contact-title">
+        <h1>Have Some Questions?</h1>
+      </div>
+      <div className="contact-form">
+        <form>
+          <div>
+            <input type="text" placeholder="Name" onChange={e => setNameValue(e.target.value)}  value={fullname} />
+          </div>
+          <div>
+            <input type="text" placeholder="Email" onChange={e => setEmailValue(e.target.value)}  value={email} />
+          </div>
+          <div>
+            <textarea name="question" id="question" placeholder="What's on your mind?" maxLength={100} onChange={e => setQuestionValue(e.target.value)}  value={question}></textarea>
+          </div>
+          <div>
+            <button className = "submit-button"onSubmit={handleSubmit}>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  )
 }
+function Footer() {
+  return (
+    <div className="container">
+      <footer className="py-3 my-4">
+        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-body-secondary">
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-body-secondary">
+              Features
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-body-secondary">
+              Pricing
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-body-secondary">
+              FAQs
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link px-2 text-body-secondary">
+              About
+            </a>
+          </li>
+        </ul>
+        <p className="text-center text-body-secondary">© 2025 Company, Inc</p>
+      </footer>
+    </div>
+  );
+}
+
 export default function LandingPage() {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // duration in ms
@@ -100,7 +312,8 @@ export default function LandingPage() {
       <Services />
       <Events />
       <Questions />
-      <Contact />
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
