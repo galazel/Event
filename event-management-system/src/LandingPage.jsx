@@ -17,7 +17,8 @@ function Home() {
   );
 }
 
-function Hero() {
+function Hero() 
+{
   return (
     <div className="hero-container" data-aos="fade-down">
       <div>
@@ -33,6 +34,7 @@ function Hero() {
     </div>
   );
 }
+
 function About() {
   return (
     <div className="about-container" data-aos="fade-down">

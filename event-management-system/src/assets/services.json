@@ -1,32 +1,32 @@
 [
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/cb224cab-3e3d-459a-92ee-77b22351130d/nDDAppDbAl.lottie",
+        "title": "Event Discovery",
+        "description": "Easily browse a wide range of events — from parties and workshops to concerts and conferences — all in one place."
     },
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/9fbc9e3a-866b-478e-8bea-de2d2f93135f/eohUjTD8nj.lottie",
+        "title": "Easy Booking",
+        "description": "Book your spot in just a few clicks. Secure your slot and get instant confirmation with a hassle-free process."
     },
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/a7929535-8d52-4118-a9a4-5e95acba9801/esC8N11vFI.lottie",
+        "title": "Reminders & Notifications",
+        "description": "Stay updated with event reminders, organizer updates, and real-time notifications — so you never miss a thing."
     },
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/61b6f915-c823-4674-83d3-6dad806b0cd4/htdNHIIVnA.lottie",
+        "title": "Event Creation Tools",
+        "description": "Organizers can create and customize events, manage details, and attract attendees using powerful built-in tools."
     },
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/4387044d-b3f1-4812-8d7f-b7a411283c76/Db2MlIQoWl.lottie",
+        "title": "Booking & Attendance",
+        "description": "Track bookings and attendance seamlessly — whether you're attending or hosting, everything is organized for you."
     },
     {
-        "photo" : "public/1.png",
-        "title" : "Placeholder",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales, purus molestie fringilla tempus, mi metus consectetur purus,lacinia ornare nisi magna eu lorem"
+        "photo": "https://lottie.host/embed/9112f331-c007-41a6-9a69-782a524c6624/JTaWISFanw.lottie",
+        "title": "Smart Dashboard",
+        "description": "Manage your events, bookings, and interactions with a user-friendly dashboard made for both clients and organizers."
     }
 ]

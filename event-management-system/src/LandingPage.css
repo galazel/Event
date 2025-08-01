@@ -31,6 +31,14 @@ li a
     text-decoration: none;
     color: black;
 }
+.login-menu
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
 /* Hero Section*/
 .hero-container
 {
@@ -134,11 +142,13 @@ li a
 }
 .service-item
 {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: rgba(65, 180, 233, 0.288);
+    box-shadow: 100px 10px 10x rgb(85, 42, 42);
 }
 .service-item:hover
 {
@@ -149,11 +159,12 @@ li a
     width: 300px;
     height: 300px;
 }
-.service-image img
+.service-image iframe
 {
     width: 100%;
     height: 100%;
 }
+/*Event*/
 .event-card {
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -203,8 +214,120 @@ form input, textarea, .submit-button
     padding: 20px;
     margin: 0;
 }
+.side-toggle
+{
+    background-color: red;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    flex-direction: column;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(10px);
+    border-style: solid;
+    display: flex;
+}
+.hide-toggle
+{
+    display: none;
+}
+.side-toggle li, .side-toggle li a
+{ 
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+.side-toggle li:hover
+{ 
+    cursor: pointer;
+}
+@media (max-width:320px) 
+{
+  .hideOnMobile 
+  {
+    display: none;
+  }
+  .navigation-container 
+  {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+  }
 
-
+  .side-toggle 
+  {
+    z-index: 999;
+    left: 0;
+  }
+  .hero-container
+  {
+    display: flex;
+    flex-direction: column;
+    margin: auto 50px;
+    height: 60vh;
+    width: 100vw;
+  }
+  .hero-container h2
+  {
+    font-size: xx-large;
+  }
+  .about-container
+  {
+    display: flex;
+    flex-direction: column;
+    margin: auto 50px;
+    height: 160vh;
+    width: 100vw;
+    gap: 50px;
+    padding: 10px;
+  }
+  .about-container .about-images
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-item .about-description
+    {
+        text-align: justify;
+        width: 100%;
+        margin: auto;
+    }
+    .about-item .images
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+    }
+    .services-container
+    {
+        display: grid;
+        grid-template-rows: 150px 1fr;
+        width: 100vw;
+        justify-items: center;
+        margin: auto 20vw;
+    }
+    .services-container .services
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: auto 0px;
+    }
+    .service-item
+    {
+        width:300px;
+    }
+    .service-image, .service-image iframe
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 
 
