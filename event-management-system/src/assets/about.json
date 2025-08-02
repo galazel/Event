@@ -1,10 +1,10 @@
 [
   {
-    "photo": "public/1.png",
+    "photo": "/1.png",
     "description": "Plan your perfect event with ease — we connect you with trusted organizers for birthdays, weddings, corporate gatherings, and more."
   },
   {
-    "photo": "public/2.png",
+    "photo": "/2.png",
     "description": "Simplify your event planning — explore services, connect with organizers, and manage everything in one easy-to-use platform."
   },
   {
